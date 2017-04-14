@@ -1,3 +1,5 @@
+package src;
+
 
 public interface ServiceMail {
 	boolean sendEmail(String address);

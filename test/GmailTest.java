@@ -1,8 +1,12 @@
+package test;
+
+import src.EmailGmail;
+import src.ServiceMail;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class EmailGmailTest {
+public class GmailTest {
 
 	@Test
 	public void testdefineContent() {
