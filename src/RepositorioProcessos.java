@@ -1,6 +1,6 @@
-package processo;
+package src;
 
-public interface RespositorioProcessos {
+public interface RepositorioProcessos {
 	boolean addProcesso(Processo processo);
 	Processo getProcesso(int id);
 }

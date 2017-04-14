@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Properties;
 
 import javax.mail.Address;
@@ -31,19 +33,19 @@ public class EmailGmail implements ServiceMail{
                return new PasswordAuthentication(sender, password);
          }
     });
-    /** Ativa Debug para sessão */
+    /** Ativa Debug para sessï¿½o */
     session.setDebug(true);
     try {
 
           Message message = new MimeMessage(session);
           message.setFrom(new InternetAddress(sender)); //Remetente
 
-          Address[] toUser = InternetAddress //Destinatário(s)
+          Address[] toUser = InternetAddress //Destinatï¿½rio(s)
                      .parse(address);  
           message.setRecipients(Message.RecipientType.TO, toUser);
           message.setSubject(subject);//Assunto
           message.setText(content);
-          /**Método para enviar a mensagem criada*/
+          /**Mï¿½todo para enviar a mensagem criada*/
           Transport.send(message);
           return true;
          } catch (MessagingException e) {

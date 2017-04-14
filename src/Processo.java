@@ -1,4 +1,4 @@
-package processo;
+package src;
 
 public class Processo {
 	private int id;
